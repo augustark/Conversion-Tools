@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert PX to EM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header>
+        <h1>Convert PX to EM</h1>
+        <p>Convert pixels to em based on the font size of it's container or parent container.</p>
+    </header>
+    <main>
+        <div class="left">
+            <div class="html">
+                <label for="html-code">HTML</label>
+                <textarea name="html-code" id="html-code" cols="30" rows="10"></textarea>
+            </div>
+            <div class="css">
+                <label for="css-code">CSS</label>
+                <textarea name="css-code" id="css-code" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <iframe id="content"></iframe>
+        </div>
+    </main>-->
+    <div class="btn-container">
+        <button type="button" id="convert">Convert PX to EM</button>
+    </div>
+
+    <style class="test-css">
+        .test-html {
+            font-size: var(--fs-16);
+        }
+        
+        .test-html h2 {
+            font-size: 80px;
+            font-weight: 400;
+            font-family: var(--ff-bebas);
+            line-height: 66px;
+            margin: 0;
+            padding-left: 30px;
+            position: relative;
+            color: cadetblue;
+            display: inline-block;
+        }
+
+        .test-html h2::before,
+        .test-html h2::after {
+            position: absolute;
+            content: attr(data-num);
+            font-size: 30px;
+            font-weight: 400;
+            color: inherit;
+            line-height: 1;
+            top: 0;
+            left: 0;
+            color: #85c8c9;
+        }
+
+        .test-html h2::after {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: green;
+            top: 35px;
+        }
+
+        .test-html h2 span {
+            display: block;
+            font-family: var(--ff-montserrat);
+            font-weight: 400;
+            font-size: 29px;
+            line-height: 23px;
+            padding-top: 5px;
+            color: #325455;
+        }
+
+        
+
+    </style>
+
+    <div class="test-html">
+        <h2 data-num="01">
+            Blue String
+            <span>Yellow Tinted Lenses</span>
+        </h2>
+    </div>
+
+    <div class="test-output">
+        <textarea name="test-output" id="test-output" cols="30" rows="10"></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

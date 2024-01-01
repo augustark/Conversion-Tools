@@ -1,0 +1,33 @@
+:root {
+    --ff-bebas: 'Bebas Neue', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --fs-16: 16px;
+}
+
+body {
+    font-family: var(--ff-montserrat);
+}
+
+main {
+    display: flex;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+textarea {
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container {
+    min-height: 200px;
+}
